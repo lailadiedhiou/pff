@@ -1,0 +1,62 @@
+/* src/components/Header.css */
+
+.header {
+  background-color:  #198754;; /* Couleur de fond verte */
+  padding: 1rem 0; /* Espacement vertical */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  
+  top: 0; /* Positionner l'en-tête en haut */
+  left: 0; /* Positionner l'en-tête à gauche */
+  right: 0; /* Positionner l'en-tête à droite */
+  z-index: 1000; /* S'assurer que l'en-tête est au-dessus des autres éléments */
+}
+.logo {
+  width: 70px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Espace entre logo et navigation */
+  align-items: center; /* Aligner verticalement */
+  max-width: 1200px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 0 20px; /* Espacement latéral */
+}
+
+.logo {
+  color: white; /* Couleur du logo */
+  font-size: 1.5rem; /* Taille du texte du logo */
+  text-decoration: none; /* Pas de soulignement */
+}
+
+.nav-links {
+  list-style: none; /* Pas de puces */
+  padding: 0; /* Pas de padding */
+  display: flex; /* Affichage en ligne */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Espacement entre les liens */
+}
+
+.nav-links a {
+  color: white; /* Couleur des liens */
+  text-decoration: none; /* Pas de soulignement */
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Soulignement au survol */
+}
+/* Header.css */
+.logout-button {
+  background-color: #f44336; /* Couleur rouge */
+  color: white; /* Texte blanc */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px; /* Coins arrondis */
+  margin-left: 15px; /* Marge à gauche */
+}
+
+.logout-button:hover {
+  background-color: #d32f2f; /* Couleur plus sombre au survol */
+}

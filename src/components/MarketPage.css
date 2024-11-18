@@ -1,0 +1,238 @@
+/*stylisation de produit*/
+.jumb {
+  background: url('src/images/image4.png');
+  width: 100%;
+  height: 70vh;
+    
+}
+.text1 {
+  color: white;
+  padding-top: 100px;
+}
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 350px;
+  margin: 8px;
+}
+
+.search-bar {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 300px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-bar:focus {
+  border: 2px solid #3C7E03;
+}
+
+.search-button, .reset-button {
+  background-color: #3C7E03;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 18px 20px;
+  margin-left: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+  .produits-title {
+    text-align: center;
+    color: #3C7E03;
+    padding-top: 20px;
+  }
+  .horizontal-line {
+    width: 200px; /* Longueur du trait */
+    height: 1px; /* Épaisseur du trait */
+    background-color: #C3BFBF; /* Couleur du trait */
+    margin-left: 20px; /* Espace à gauche */
+    margin-top: 10px;
+  }
+  .checkbox-container {
+    display: flex;
+    flex-direction: column; /* Aligner verticalement les éléments */
+    gap: 10px; /* Espacement entre chaque checkbox */
+    margin-top: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  /* Grid Container */
+.contenu {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.produits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.product-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.product-info p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.quantity-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #218838;
+}
+
+  /* Conteneur pour la quantité et le bouton ajouter */
+  .quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .quantity-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .quantity-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input[type="number"] {
+    width: 50px;
+    text-align: center;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  /* Bouton Ajouter au panier */
+  .add-to-cart {
+    background-color: #3C7E03;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #3C7E03;
+  }
+  .produits {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 20px;
+  }
+  .contenu {
+    padding: 60px;
+    display: flex;
+    
+  }
+  /* Icône j'aime (cœur) */
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #ff4d4d;
+    cursor: pointer;
+  }
+  
+  .heart-icon:hover {
+    color: #ff3333;
+  }
+  @media (max-width: 768px) {
+    .produits {
+        grid-template-columns: 1fr;
+    }
+    .product-card {
+        width: 100%;
+    }
+    .search-bar {
+        width: 100%;
+    }
+}

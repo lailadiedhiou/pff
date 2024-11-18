@@ -1,0 +1,81 @@
+/* CartPage.css */
+
+.cart-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.panier {
+  height: 30vh;
+  background-image: url('src/images/fruits-et-legumes-696x464-1.png');
+  background-size: cover;
+}
+h1 {
+  padding-top: 50px;
+  font-size: 2rem;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.cart-summary {
+  text-align: right;
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.cart-summary p {
+  font-size: 1.1rem;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.checkout-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.checkout-btn:hover {
+  background-color: #218838;
+}
+.button-rouge {
+  background-color: #ff4d4d; /* Couleur rouge pour le bouton Retirer */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+}
+
+.button-rouge:hover {
+  background-color: #e60000; /* Rouge plus foncé au survol */
+}
